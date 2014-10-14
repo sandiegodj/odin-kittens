@@ -1,0 +1,22 @@
+<h1>All Kittens</h1>
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Age</th>
+		<th>Cuteness</th>
+		<th>Softness</th>
+	</tr>
+<tbody>
+<% @kittens.each do |k| %>
+	<tr>
+		<td><%= k.name %></td>
+		<td><%= k.age %></td>
+		<td><%= k.cuteness %></td>
+		<td><%= k.softness%></td>
+		<td><%= link_to 'delete', kitten_path(k), method: 
+				:delete, date: {confirm: "Really delete the
+				kitten?"}  %></td>
+	</tr>	
+<% end %>
+</tbody>
+</table>
