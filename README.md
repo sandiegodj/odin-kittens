@@ -1,3 +1,3 @@
-This app responds to GET API requests and renders JSON output or HTML output.  
+This app can work as an API rendering JSON when applicable.
 
-Project: http://www.theodinproject.com/ruby-on-rails/apis
+per the assignment: http://www.theodinproject.com/ruby-on-rails/apis
